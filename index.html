@@ -3,41 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cloudmann Consulting</title>
-<meta name="description" content="We build AI that ships — custom AI systems, MCP servers, trading bots, websites, iOS apps and AI-generated media. Working software, not slide decks.">
+<title>Cloudmann Consulting · Part of Cloudmann Companies</title>
+<meta name="description" content="Cloudmann Consulting builds working AI systems, MCP servers, websites, iOS apps and AI media, and offers passive website security checks. Part of Cloudmann Companies, with Cloudmann Studios and ValuBrief.">
 <meta property="og:title" content="Cloudmann Consulting">
-<meta property="og:description" content="We build AI that ships — custom AI systems, MCP servers, trading bots, websites, iOS apps and AI-generated media. Working software, not slide decks.">
+<meta property="og:description" content="AI that ships, not AI that demos. Custom AI builds, MCP servers, websites, iOS apps, AI media and passive website security checks.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cloudmannconsulting.com/">
+<meta property="og:image" content="https://cloudmannconsulting.com/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0A101C">
+<link rel="canonical" href="https://cloudmannconsulting.com/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M8.5 22.5h13a5.5 5.5 0 0 0 .6-10.97A7.5 7.5 0 0 0 8.1 13.2 4.65 4.65 0 0 0 8.5 22.5Z' fill='none' stroke='%2363D3C0' stroke-width='2'/%3E%3Cpath d='M13 27h10M16.5 22.5V27' stroke='%23E9A33C' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/public-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+/* Fonts are self-hosted (SIL OFL 1.1). No third-party requests, no trackers. */
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/public-sans-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/public-sans-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Public Sans";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/public-sans-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/bricolage-grotesque-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/bricolage-grotesque-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/bricolage-grotesque-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Bricolage Grotesque";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/bricolage-grotesque-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin-500-normal.woff2) format("woff2")}
+
 :root{
   --night:#0A101C; --night-2:#111A2B; --night-3:#1E2A3F;
   --paper:#F1F3F7; --paper-2:#E8ECF3; --white:#FFFFFF;
   --ink:#0D1522; --ink-2:#41506B;
   --muted:#8695AC; --muted-2:#5D6C87;
-  --amber:#E9A33C; --amber-lo:#F7C87A;
-  --aqua:#63D3C0;
+  --amber:#E9A33C; --amber-lo:#F7C87A; --amber-ink:#9A5A06;
+  --aqua:#63D3C0; --aqua-ink:#1C7C6D;
+  --vb-green:#6FCB92;
   --line-light:#DCE1EA;
   --maxw:1180px;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
 body{margin:0; background:var(--night); color:var(--ink);
   font-family:"Public Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
   font-size:17px; line-height:1.6; -webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif; margin:0; text-wrap:balance; letter-spacing:-.022em; line-height:1.04}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif; margin:0; text-wrap:balance; letter-spacing:-.022em; line-height:1.06}
 p{margin:0}
 a{color:inherit}
-img{max-width:100%}
+img{max-width:100%; height:auto}
 .wrap{max-width:var(--maxw); margin:0 auto; padding:0 26px}
 .eyebrow{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11.5px; letter-spacing:.2em; text-transform:uppercase}
 :focus-visible{outline:2px solid var(--amber); outline-offset:3px}
+.skip{position:absolute; left:12px; top:-60px; z-index:10; background:var(--amber); color:#20160A; padding:10px 14px; font-weight:600; text-decoration:none}
+.skip:focus{top:12px}
+.sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+
+/* Pending facts. Must be resolved before this page goes live. */
+.confirm{display:inline-block; background:#FFF1C9; color:#5A3B00; border:1px dashed #B07A12;
+  font-family:"JetBrains Mono",monospace; font-size:12px; letter-spacing:.02em; padding:2px 7px; border-radius:2px; line-height:1.5}
 
 /* ---------- buttons ---------- */
 .btn{display:inline-block; background:var(--amber); color:#20160A !important; text-decoration:none;
@@ -48,132 +70,190 @@ img{max-width:100%}
 .btn-ghost:hover{background:#16202F}
 
 /* ---------- top ---------- */
-.top{position:relative; z-index:3; padding:26px 0}
+.top{position:relative; z-index:3; padding:24px 0}
 .top .wrap{display:flex; align-items:center; justify-content:space-between; gap:20px}
 .brand{display:flex; align-items:center; gap:11px; color:#EDF1F7; text-decoration:none}
 .mark{width:27px;height:27px;flex:none}
-.brand b{font-family:"Bricolage Grotesque",sans-serif; font-weight:600; font-size:17.5px; letter-spacing:-.01em}
+.brand b{font-family:"Bricolage Grotesque",sans-serif; font-weight:600; font-size:17.5px; letter-spacing:-.01em; white-space:nowrap}
 .brand i{font-style:normal; color:var(--muted); font-weight:400}
-.top nav{display:flex; gap:28px; align-items:center}
+.top nav{display:flex; gap:26px; align-items:center}
 .top nav a{color:#B9C4D6; text-decoration:none; font-size:14.5px}
 .top nav a:hover{color:#fff}
+.top nav a.btn{color:#20160A}
 
 /* ---------- hero ---------- */
 .hero{position:relative; background:var(--night); color:#E8EEF6; overflow:hidden;
-  padding-bottom:104px; border-bottom:1px solid var(--night-3)}
+  padding-bottom:96px; border-bottom:1px solid var(--night-3)}
 .hero canvas{position:absolute; inset:0; width:100%; height:100%; display:block}
 .hero .wrap{position:relative; z-index:2}
-.hero-inner{padding-top:52px}
+.hero-inner{padding-top:48px}
 .hero .eyebrow{color:var(--aqua); margin-bottom:22px}
-.hero h1{font-size:clamp(42px,7vw,84px); font-weight:800; color:#F6F9FD; max-width:18ch}
+.hero h1{font-size:clamp(40px,7vw,84px); font-weight:800; color:#F6F9FD; max-width:18ch}
 .hero h1 em{font-style:normal; color:var(--amber)}
 .hero .lead{margin-top:26px; max-width:58ch; font-size:clamp(17px,2.1vw,20.5px); color:#B2C0D3; line-height:1.55}
 .hero .cta{margin-top:38px; display:flex; flex-wrap:wrap; gap:14px; align-items:center}
-.hero .cta small{color:var(--muted); font-size:13.5px}
-.ticker{margin-top:60px; border-top:1px solid var(--night-3); padding-top:20px;
-  display:flex; flex-wrap:wrap; gap:8px 30px}
-.ticker span{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted); letter-spacing:.04em}
-.ticker span b{color:var(--aqua); font-weight:500}
+.ticker{margin-top:58px; border-top:1px solid var(--night-3); padding-top:20px;
+  display:flex; flex-wrap:wrap; gap:8px 28px; list-style:none; padding-left:0; margin-bottom:0}
+.ticker li{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted); letter-spacing:.04em}
+.ticker li b{color:var(--aqua); font-weight:500}
 
 /* ---------- light body ---------- */
 .body-light{background:var(--paper); color:var(--ink)}
 section{padding:92px 0}
 .sec-head{max-width:64ch; margin-bottom:44px}
 .sec-head .eyebrow{color:var(--muted-2); margin-bottom:14px}
-.sec-head h2{font-size:clamp(31px,4.1vw,46px); font-weight:600}
+.sec-head h2{font-size:clamp(30px,4.1vw,46px); font-weight:600}
 .sec-head p{margin-top:16px; color:var(--ink-2); font-size:18px}
 
+/* ---------- divisions ---------- */
+.family{padding:0; position:relative; z-index:2}
+.divs{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line-light);
+  border:1px solid var(--line-light); margin-top:-48px; box-shadow:0 18px 40px -24px rgba(10,16,28,.35)}
+.div{background:var(--white); padding:26px 26px 28px; display:flex; flex-direction:column; gap:8px;
+  text-decoration:none; color:inherit; border-top:3px solid var(--c); transition:background .15s ease}
+.div:hover{background:#FAFBFD}
+.div .k{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted-2)}
+.div h3{font-size:22px; font-weight:600}
+.div p{color:var(--ink-2); font-size:15px; line-height:1.55}
+.div .sub{margin-top:auto; padding-top:12px; font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted-2); letter-spacing:.03em}
+.family-note{margin-top:16px; font-family:"JetBrains Mono",monospace; font-size:11.5px; letter-spacing:.06em; color:var(--muted-2)}
+
 /* ---------- services ---------- */
-.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:1px;
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(310px,1fr)); gap:1px;
   background:var(--line-light); border:1px solid var(--line-light)}
-.card{background:var(--white); padding:32px 30px 34px; display:flex; flex-direction:column; gap:12px;
+.card{background:var(--white); padding:32px 30px 32px; display:flex; flex-direction:column; gap:12px;
   transition:background .15s ease}
 .card:hover{background:#FAFBFD}
-.card.wide{grid-column:1/-1}
-.card.wide p{max-width:78ch}
-.card .num{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; color:var(--amber)}
+.card .num{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; color:var(--amber-ink)}
+.card .num .new{margin-left:8px; color:var(--aqua-ink); letter-spacing:.14em}
 .card h3{font-size:21.5px; font-weight:600; text-wrap:pretty}
 .card p{color:var(--ink-2); font-size:15.5px; line-height:1.58}
+.card .note{font-size:13.5px; color:var(--ink); background:var(--paper); border-left:2px solid var(--amber); padding:8px 11px; line-height:1.45}
 .card .detail{margin-top:auto; padding-top:15px; border-top:1px solid var(--line-light);
   font-family:"JetBrains Mono",monospace; font-size:11.5px; color:var(--muted-2); letter-spacing:.03em}
 
-/* ---------- feature ---------- */
-.feature{background:var(--white); border:1px solid var(--line-light);
-  display:grid; grid-template-columns:1.15fr .85fr; margin-top:26px}
-.feature .left{padding:42px 40px}
-.feature .right{background:var(--night-2); color:#DCE5F0; padding:42px 40px;
-  display:flex; flex-direction:column; justify-content:center; gap:16px}
-.feature .eyebrow{color:var(--amber); margin-bottom:12px}
-.feature h3{font-size:30px; font-weight:600; margin-bottom:16px}
-.feature p{color:var(--ink-2)}
-.feature p + p{margin-top:15px}
-.feature .stat{font-family:"Bricolage Grotesque",sans-serif; font-size:15px; color:#F4F8FD; font-weight:500}
-.feature ul{margin:0; padding-left:18px; color:#9EAFC6; font-size:15px; line-height:1.75}
-.feature .visit{margin-top:8px; font-family:"JetBrains Mono",monospace; font-size:12.5px;
-  color:var(--aqua); text-decoration:none; letter-spacing:.04em}
-.feature .visit:hover{text-decoration:underline}
-
 /* ---------- steps ---------- */
-.steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); gap:32px}
+.steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:32px}
 .step{display:flex; flex-direction:column; gap:10px; padding-top:18px; border-top:2px solid var(--ink)}
 .step .k{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; color:var(--muted-2)}
 .step h3{font-size:19.5px; font-weight:600}
 .step p{color:var(--ink-2); font-size:15.5px}
 
 /* ---------- start band ---------- */
-.band{background:var(--paper-2); border-top:1px solid var(--line-light); border-bottom:1px solid var(--line-light)}
-.starts{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1px;
+.band{background:var(--paper-2); border-top:1px solid var(--line-light)}
+.starts{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1px;
   background:var(--line-light); border:1px solid var(--line-light)}
 .start{background:var(--white); padding:28px 26px; display:flex; flex-direction:column; gap:9px}
-.start .k{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; color:var(--amber)}
+.start .k{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; color:var(--amber-ink)}
 .start h3{font-size:19px; font-weight:600}
 .start p{color:var(--ink-2); font-size:15px}
 
+/* ---------- dark feature sections (ValuBrief, Studios) ---------- */
+.dark{background:var(--night); color:#DCE5F0; border-top:1px solid var(--night-3)}
+.dark .sec-head .eyebrow{color:var(--muted)}
+.dark .sec-head h2{color:#F6F9FD}
+.dark .sec-head p{color:#A9B7CB}
+.dark .confirm{background:#2A2210; color:#F7D58F; border-color:#8A6420}
+
+.vb{display:grid; grid-template-columns:1.1fr .9fr; gap:1px; background:var(--night-3); border:1px solid var(--night-3)}
+.vb > div{background:var(--night-2); padding:38px 36px}
+.vb-logo{height:34px; width:auto; display:block; margin-bottom:24px}
+.vb h3{font-size:clamp(24px,2.8vw,30px); font-weight:600; color:#F6F9FD; margin-bottom:14px}
+.vb p{color:#A9B7CB; font-size:16px}
+.vb p + p{margin-top:14px}
+.vb .by{font-family:"JetBrains Mono",monospace; font-size:11.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--vb-green); margin-bottom:12px}
+.vb h4{margin:0 0 12px; font-family:"JetBrains Mono",monospace; font-weight:500; font-size:11.5px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted)}
+.vb .block + .block{margin-top:30px}
+.tiers{display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:0; padding:0}
+.tiers li{font-size:13.5px; font-weight:500; color:#E6EEF6; border:1px solid #33405A; padding:5px 10px; border-radius:2px}
+.tiers li::before{content:""; display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--t); margin-right:8px; vertical-align:1px}
+.plain{margin:0; padding-left:18px; color:#B7C5D7; font-size:15px; line-height:1.75}
+.status{display:grid; grid-template-columns:auto 1fr; gap:8px 14px; margin:0; font-size:15px}
+.status dt{color:#E6EEF6; font-weight:600}
+.status dd{margin:0; color:#A9B7CB}
+.status .live{color:var(--vb-green)}
+.vb .disc{margin-top:26px; padding-top:16px; border-top:1px solid var(--night-3); font-size:13.5px; color:#8FA2B4}
+.vb .links{margin-top:22px; display:flex; flex-wrap:wrap; gap:10px 22px}
+.vb .links a{font-family:"JetBrains Mono",monospace; font-size:12.5px; color:var(--vb-green); text-decoration:none; letter-spacing:.03em}
+.vb .links a:hover{text-decoration:underline}
+
+.studio{display:grid; grid-template-columns:1.25fr .75fr .75fr; gap:1px; background:var(--night-3); border:1px solid var(--night-3)}
+.studio > div{background:var(--night-2); padding:34px 32px; display:flex; flex-direction:column; gap:12px}
+.studio .k{font-family:"JetBrains Mono",monospace; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--aqua)}
+.studio h3{font-size:24px; font-weight:600; color:#F6F9FD}
+.studio p{color:#A9B7CB; font-size:15.5px}
+.studio .game{border-top:3px solid var(--aqua)}
+.facts{display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:4px 0 0; padding:0}
+.facts li{font-family:"JetBrains Mono",monospace; font-size:12px; color:#CFE0EC; border:1px solid #2C3A52; padding:4px 9px; border-radius:2px}
+.studio .more{margin-top:auto; padding-top:14px; border-top:1px solid var(--night-3); font-size:13.5px; color:var(--muted)}
+.studio .more a{color:#C3CEDE}
+
 /* ---------- contact ---------- */
-.contact{background:var(--night); color:#E8EEF6}
+.contact{background:var(--night); color:#E8EEF6; border-top:1px solid var(--night-3)}
 .contact .inner{display:grid; grid-template-columns:1.25fr .75fr; gap:64px; align-items:end}
 .contact h2{font-size:clamp(32px,4.6vw,52px); font-weight:700; color:#F6F9FD}
 .contact p{margin-top:18px; color:#A9B7CB; max-width:46ch}
 .contact .mail{margin-top:32px; display:inline-block; font-family:"Bricolage Grotesque",sans-serif;
-  font-size:clamp(19px,2.5vw,27px); font-weight:500; color:var(--amber); text-decoration:none;
-  border-bottom:1px solid rgba(233,163,60,.4); padding-bottom:6px; word-break:break-word}
+  font-size:clamp(18px,2.5vw,27px); font-weight:500; color:var(--amber); text-decoration:none;
+  border-bottom:1px solid rgba(233,163,60,.4); padding-bottom:6px; overflow-wrap:anywhere}
 .contact .mail:hover{border-bottom-color:var(--amber)}
-.caps{display:flex; flex-direction:column; gap:9px}
-.caps span{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted); letter-spacing:.04em}
+.caps{display:flex; flex-direction:column; gap:9px; list-style:none; margin:0; padding:0}
+.caps li{font-family:"JetBrains Mono",monospace; font-size:12px; color:var(--muted); letter-spacing:.04em}
 
 footer{background:var(--night); border-top:1px solid var(--night-3); padding:28px 0 42px}
 footer .wrap{display:flex; flex-wrap:wrap; gap:12px 30px; justify-content:space-between; align-items:center}
-footer p{font-size:13px; color:var(--muted-2)}
+footer p{font-size:13px; color:var(--muted)}
 footer a{color:var(--muted); text-decoration:none; font-size:13px}
-footer a:hover{color:#C3CEDE}
+footer a:hover{color:#C3CEDE; text-decoration:underline}
+footer .sep{color:#3A4760; margin:0 8px}
 
-@media (max-width:880px){
-  .feature{grid-template-columns:1fr}
-  .contact .inner{grid-template-columns:1fr; gap:40px; align-items:start}
-  .top nav{display:none}
-  section{padding:66px 0}
-  .hero{padding-bottom:74px}
+@media (max-width:980px){
+  .divs{grid-template-columns:1fr}
+  .vb{grid-template-columns:1fr}
+  .studio{grid-template-columns:1fr 1fr}
+  .studio .game{grid-column:1/-1}
 }
-@media (prefers-reduced-motion:reduce){ .hero canvas{display:none} }
+@media (max-width:880px){
+  .contact .inner{grid-template-columns:1fr; gap:40px; align-items:start}
+  .top nav a:not(.btn){display:none}
+  section{padding:66px 0}
+  .hero{padding-bottom:84px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  .top{padding:18px 0}
+  .brand b{font-size:16px}
+  .top nav a.btn{padding:9px 14px; font-size:14px}
+  .hero-inner{padding-top:28px}
+  .ticker{margin-top:44px}
+  .studio{grid-template-columns:1fr}
+  .vb > div, .studio > div{padding:28px 22px}
+  .card{padding:26px 22px}
+  .grid{grid-template-columns:1fr}
+}
+@media (max-width:380px){ .brand i{display:none} }
+@media (prefers-reduced-motion:reduce){ .hero canvas{display:none} html{scroll-behavior:auto} }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<div class="hero">
+<header class="hero">
   <canvas id="sky" aria-hidden="true"></canvas>
 
   <div class="top">
     <div class="wrap">
-      <a class="brand" href="/">
+      <a class="brand" href="/" aria-label="Cloudmann Consulting home">
         <svg class="mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <path d="M8.5 22.5h13a5.5 5.5 0 0 0 .6-10.97A7.5 7.5 0 0 0 8.1 13.2 4.65 4.65 0 0 0 8.5 22.5Z" stroke="#63D3C0" stroke-width="1.7" stroke-linejoin="round"/>
           <path d="M13 27h10M16.5 22.5V27" stroke="#E9A33C" stroke-width="1.7" stroke-linecap="round"/>
         </svg>
         <b>Cloudmann <i>Consulting</i></b>
       </a>
-      <nav>
-        <a href="#work">What we build</a>
+      <nav aria-label="Primary">
+        <a href="#work">Services</a>
         <a href="#valubrief">ValuBrief</a>
+        <a href="#studios">Studios</a>
         <a href="#how">How we work</a>
         <a href="#contact" class="btn">Start a project</a>
       </nav>
@@ -181,121 +261,139 @@ footer a:hover{color:#C3CEDE}
   </div>
 
   <div class="wrap hero-inner">
-    <p class="eyebrow">AI consulting &middot; Custom builds &middot; Product</p>
+    <p class="eyebrow">Cloudmann Consulting &middot; Part of Cloudmann Companies</p>
     <h1>AI that ships, not AI that <em>demos</em>.</h1>
     <p class="lead">Most AI engagements end at a slide deck. We start with the work you already do &mdash; the report rewritten every quarter, the process nobody wants to own, the systems that don't talk to each other &mdash; and build the thing that does it for you. Then we hand you the keys.</p>
     <div class="cta">
       <a href="#contact" class="btn">Start a project</a>
       <a href="#work" class="btn btn-ghost">See what we build</a>
-      <small>Usually something working in the first two weeks.</small>
     </div>
-    <div class="ticker">
-      <span><b>&#47;</b> Custom AI systems</span>
-      <span><b>&#47;</b> MCP servers</span>
-      <span><b>&#47;</b> Trading bots</span>
-      <span><b>&#47;</b> Websites &amp; web apps</span>
-      <span><b>&#47;</b> iOS apps</span>
-      <span><b>&#47;</b> AI video &amp; music</span>
-    </div>
+    <ul class="ticker" aria-label="Services at a glance">
+      <li><b>&#47;</b> Custom AI systems</li>
+      <li><b>&#47;</b> AI for small businesses</li>
+      <li><b>&#47;</b> MCP servers</li>
+      <li><b>&#47;</b> Websites &amp; web apps</li>
+      <li><b>&#47;</b> iOS apps</li>
+      <li><b>&#47;</b> AI video &amp; music</li>
+      <li><b>&#47;</b> Passive security checks</li>
+    </ul>
   </div>
-</div>
+</header>
 
+<main id="main">
 <div class="body-light">
 
-  <section id="work">
+  <section class="family" aria-labelledby="family-h">
+    <div class="wrap">
+      <h2 id="family-h" class="sr">The Cloudmann Companies</h2>
+      <div class="divs">
+        <a class="div" href="#work" style="--c:var(--amber)">
+          <span class="k">Professional services</span>
+          <h3>Cloudmann Consulting</h3>
+          <p>AI consulting, custom builds, MCP servers, websites, iOS apps, AI media and security assessments.</p>
+          <span class="sub">You are here &darr;</span>
+        </a>
+        <a class="div" href="#studios" style="--c:var(--aqua)">
+          <span class="k">Games &middot; music &middot; video shorts</span>
+          <h3>Cloudmann Studios</h3>
+          <p>Games, music and custom video shorts. Games are made under Cloudmann Labs, the Studios games line.</p>
+          <span class="sub">Includes Cloudmann Labs &darr;</span>
+        </a>
+        <a class="div" href="#valubrief" style="--c:var(--vb-green)">
+          <span class="k">Developed by Cloudmann Consulting</span>
+          <h3>ValuBrief</h3>
+          <p>Source-traceable valuation reports for licensed real-estate professionals.</p>
+          <span class="sub">valubrief.ai &darr;</span>
+        </a>
+      </div>
+      <p class="family-note">The Cloudmann Companies: Consulting &middot; Studios (with Labs) &middot; ValuBrief</p>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-h">
     <div class="wrap">
       <div class="sec-head">
-        <p class="eyebrow">What we build</p>
-        <h2>Seven things we actually deliver</h2>
-        <p>Not a menu of buzzwords. Every one of these is something we've built, shipped and kept running &mdash; and every engagement ends with working software or a finished deliverable in your hands.</p>
+        <p class="eyebrow">Cloudmann Consulting &middot; What we build</p>
+        <h2 id="work-h">Nine things we deliver</h2>
+        <p>Not a menu of buzzwords. Every engagement ends with working software or a finished deliverable in your hands.</p>
       </div>
 
       <div class="grid">
-        <div class="card">
+        <article class="card">
           <span class="num">01</span>
           <h3>AI consulting &amp; custom builds</h3>
-          <p>We go deep on how your business actually runs, find the work that repeats, and build AI systems that absorb it. The output is a tool your team uses on Monday &mdash; not a roadmap for next year.</p>
+          <p>We go deep on how your business actually runs, find the work that repeats, and build AI systems that absorb it. The output is a tool your team uses on Monday, not a roadmap for next year.</p>
           <div class="detail">Discovery &rarr; prototype &rarr; production</div>
-        </div>
+        </article>
 
-        <div class="card">
-          <span class="num">02</span>
+        <article class="card">
+          <span class="num">02<span class="new">NEW</span></span>
+          <h3>AI consulting for small businesses</h3>
+          <p>Practical AI help sized for a small team. We look at how you work today, point to the repetitive tasks AI can realistically take on, and help you set up tools that fit. If it isn't worth doing, we'll say so.</p>
+          <div class="detail">Plain advice &middot; small, useful first steps</div>
+        </article>
+
+        <article class="card">
+          <span class="num">03</span>
           <h3>Custom MCP servers</h3>
           <p>Model Context Protocol servers that wire AI assistants directly into your systems &mdash; your data, your APIs, your internal tools &mdash; so the model works from your reality instead of guessing at it.</p>
           <div class="detail">Python &amp; TypeScript &middot; self-hosted or managed</div>
-        </div>
+        </article>
 
-        <div class="card">
-          <span class="num">03</span>
-          <h3>Websites &amp; web apps</h3>
-          <p>Fast, hand-built sites that load instantly and cost almost nothing to run. No page-builder bloat, no monthly platform tax, no template your competitors are also using.</p>
-          <div class="detail">Static or full-stack &middot; custom domain &middot; HTTPS</div>
-        </div>
-
-        <div class="card">
+        <article class="card">
           <span class="num">04</span>
-          <h3>iOS app development</h3>
-          <p>Native iPhone apps taken from idea to the App Store &mdash; including the parts nobody enjoys: the store listing, the privacy policy, the review cycle. Shipped, not prototyped.</p>
-          <div class="detail">Swift &middot; App Store submission included</div>
-        </div>
+          <h3>Websites &amp; web apps</h3>
+          <p>Fast, hand-built sites and web apps. No page-builder bloat and no template your competitors are also using.</p>
+          <div class="detail">Static or full-stack &middot; custom domain &middot; HTTPS</div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <span class="num">05</span>
-          <h3>AI video &amp; music for marketing</h3>
-          <p>Generated video and original songs built for one specific campaign &mdash; product launches, trade-show loops, social spots. Distinctive enough to be remembered, cheap enough to iterate on until it lands.</p>
-          <div class="detail">Concept &middot; generation &middot; edit &middot; delivery</div>
-        </div>
+          <h3>iOS app development</h3>
+          <p>Native iPhone apps written in Swift, including the parts nobody enjoys: the store listing, the privacy policy and the App Review cycle.</p>
+          <div class="detail">Swift &middot; native iOS</div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <span class="num">06</span>
-          <h3>Trading bots &amp; market tools</h3>
-          <p>Automated trading systems and the tooling around them &mdash; strategy logic, backtesting harnesses, execution plumbing and dashboards that show what the system is actually doing. Built for our own use first, which is the only reason we'll build one for you.</p>
-          <div class="detail">Backtesting &middot; execution &middot; monitoring</div>
-        </div>
+          <h3>AI video &amp; music for marketing</h3>
+          <p>Generated video and original songs made for one specific campaign: product launches, trade-show loops, social spots. Easy to iterate on until it lands.</p>
+          <div class="detail">Concept &middot; generation &middot; edit &middot; delivery</div>
+        </article>
 
-        <div class="card wide">
-          <span class="num">07</span>
+        <article class="card">
+          <span class="num">07<span class="new">NEW</span></span>
+          <h3>Passive website security checks</h3>
+          <p>A non-intrusive review of what your website already shows the public, such as its HTTPS setup and security headers, with findings written up in plain language.</p>
+          <p class="note">Observation only. No exploitation, no active attack traffic, no login attempts. For sites you own or are authorized to have reviewed.</p>
+          <div class="detail">Non-intrusive &middot; observation only</div>
+        </article>
+
+        <article class="card">
+          <span class="num">08</span>
           <h3>External attack surface assessments</h3>
-          <p>A specialty we're often asked for: automated reconnaissance of everything your organization exposes to the internet, delivered as a report your team &mdash; or your customer &mdash; can act on immediately.</p>
+          <p>Automated reconnaissance of what your organization exposes to the internet, delivered as a report your team, or your customer, can act on.</p>
           <div class="detail">Automated recon &middot; branded reporting</div>
-        </div>
+        </article>
+
+        <!-- [CONFIRM: keep trading bots on the public site, yes/no]. To remove: delete this card, the matching line in .caps, and change "Nine" to "Eight" in #work-h. -->
+        <article class="card">
+          <span class="num">09</span>
+          <h3>Trading bots &amp; market tools</h3>
+          <p>Automated trading systems and the tooling around them: strategy logic, backtesting harnesses, execution plumbing and dashboards that show what the system is doing.</p>
+          <p class="note">This is software tooling. It is not investment advice.</p>
+          <div class="detail">Backtesting &middot; execution &middot; monitoring</div>
+        </article>
       </div>
     </div>
   </section>
 
-  <section id="valubrief" style="padding-top:0">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow">Built in-house</p>
-        <h2>ValuBrief</h2>
-      </div>
-      <div class="feature">
-        <div class="left">
-          <p class="eyebrow">valubrief.ai</p>
-          <h3>A product, not a portfolio piece</h3>
-          <p>ValuBrief is our own software company &mdash; designed, built, deployed and operated end to end. It's the clearest answer to the question every consultancy gets asked: have you actually done this yourselves, or do you just advise?</p>
-          <p>The same stack, the same discipline and the same deployment practices go into client work. We're not learning on your project.</p>
-        </div>
-        <div class="right">
-          <p class="stat">What it proves</p>
-          <ul>
-            <li>Production infrastructure, not a demo environment</li>
-            <li>Continuous deployment from source control</li>
-            <li>Real users, real uptime, real maintenance</li>
-            <li>Built and operated start to finish</li>
-          </ul>
-          <a class="visit" href="https://valubrief.ai">valubrief.ai &rarr;</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="how" style="padding-top:0">
+  <section id="how" style="padding-top:0" aria-labelledby="how-h">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">How we work</p>
-        <h2>Three steps, no discovery theatre</h2>
-        <p>You'll know inside one conversation whether there's something worth building. If there isn't, we'll tell you &mdash; that answer is free and it saves everyone a quarter.</p>
+        <h2 id="how-h">Three steps, no discovery theatre</h2>
+        <p>You'll know inside one conversation whether there's something worth building. If there isn't, we'll tell you.</p>
       </div>
       <div class="steps">
         <div class="step">
@@ -311,66 +409,162 @@ footer a:hover{color:#C3CEDE}
         <div class="step">
           <span class="k">STEP THREE</span>
           <h3>Hand over the keys</h3>
-          <p>Your repo, your accounts, your infrastructure, documented well enough that you could replace us. Most clients don't &mdash; but they always could.</p>
+          <p>Your repo, your accounts, your infrastructure, documented well enough that you could replace us.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <div class="band">
+    <section style="padding-top:64px;padding-bottom:64px" aria-labelledby="ways-h">
+      <div class="wrap">
+        <div class="sec-head" style="margin-bottom:30px">
+          <p class="eyebrow">Where projects start</p>
+          <h2 id="ways-h" style="font-size:clamp(26px,3.2vw,34px)">Three ways in</h2>
+        </div>
+        <div class="starts">
+          <div class="start">
+            <span class="k">A</span>
+            <h3>You know what you want built</h3>
+            <p>An app, a site, an integration, a server. Send the shape of it and we'll come back with an approach.</p>
+          </div>
+          <div class="start">
+            <span class="k">B</span>
+            <h3>You know what's painful</h3>
+            <p>Something repetitive is eating your week and you suspect AI could take it. We'll find out whether that's true before anyone commits.</p>
+          </div>
+          <div class="start">
+            <span class="k">C</span>
+            <h3>You're curious what's possible</h3>
+            <p>You've seen what these tools can do and want to know what applies to your business. Worth a conversation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
 </div>
 
-<div class="band">
-  <section style="padding-top:64px;padding-bottom:64px">
-    <div class="wrap">
-      <div class="sec-head" style="margin-bottom:30px">
-        <p class="eyebrow">Where projects start</p>
-        <h2 style="font-size:clamp(26px,3.2vw,34px)">Three ways in</h2>
-      </div>
-      <div class="starts">
-        <div class="start">
-          <span class="k">A</span>
-          <h3>You know what you want built</h3>
-          <p>An app, a site, an integration, a server. Send the shape of it and we'll come back with an approach and a timeline.</p>
-        </div>
-        <div class="start">
-          <span class="k">B</span>
-          <h3>You know what's painful</h3>
-          <p>Something repetitive is eating your week and you suspect AI could take it. We'll find out whether that's true before anyone commits.</p>
-        </div>
-        <div class="start">
-          <span class="k">C</span>
-          <h3>You're curious what's possible</h3>
-          <p>You've seen what these tools can do and want to know what applies to your business. Worth a conversation.</p>
-        </div>
-      </div>
+<section id="valubrief" class="dark" aria-labelledby="vb-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Product &middot; Developed by Cloudmann Consulting</p>
+      <h2 id="vb-h">ValuBrief</h2>
+      <p>Source-traceable valuation reports for licensed real-estate professionals.</p>
     </div>
-  </section>
-</div>
-
-<section class="contact" id="contact">
-  <div class="wrap inner">
-    <div>
-      <p class="eyebrow" style="color:var(--aqua)">Start a project</p>
-      <h2>Tell us what's eating your week.</h2>
-      <p>If it's repetitive, documented, and somebody on your team dreads it, there's usually something to build. Send a couple of sentences and we'll tell you straight whether it's worth doing.</p>
-      <a class="mail" href="mailto:anthony@cloudmannconsulting.com?subject=Project%20inquiry">anthony@cloudmannconsulting.com</a>
-    </div>
-    <div class="caps">
-      <span>&#47;&#47; AI consulting &amp; custom builds</span>
-      <span>&#47;&#47; MCP server development</span>
-      <span>&#47;&#47; Trading bots &amp; market tools</span>
-      <span>&#47;&#47; Websites &amp; web apps</span>
-      <span>&#47;&#47; iOS application development</span>
-      <span>&#47;&#47; AI video &amp; music production</span>
-      <span>&#47;&#47; External attack surface assessments</span>
+    <div class="vb">
+      <div>
+        <img class="vb-logo" src="/assets/valubrief-logo-on-dark.svg" alt="ValuBrief.ai" width="138" height="34">
+        <p class="by">Developed by Cloudmann Consulting</p>
+        <h3>One engine. Every figure traceable.</h3>
+        <p>One engine runs the CMA, the Advanced Market Brief, the BPO, appraisal support and a CRM.</p>
+        <p>The model never produces a number; the engine does the arithmetic. Weak comparables are disclosed, not buried.</p>
+        <div class="block" style="margin-top:28px">
+          <h4>Five provenance tiers</h4>
+          <ul class="tiers">
+            <li style="--t:#6FCB92">Sourced</li>
+            <li style="--t:#63D3C0">Indicative</li>
+            <li style="--t:#E9A33C">Assumption</li>
+            <li style="--t:#9DB4D0">You entered</li>
+            <li style="--t:#8695AC">Not found</li>
+          </ul>
+        </div>
+        <p class="disc">Source-traceable analysis. Not an appraisal, not legal or tax advice.</p>
+      </div>
+      <div>
+        <div class="block">
+          <h4>Who it's for</h4>
+          <dl class="status">
+            <dt>Brokers &amp; appraisers</dt><dd class="live">Live now</dd>
+            <dt>Property-tax consultants</dt><dd>Coming soon</dd>
+            <dt>Attorneys</dt><dd>Coming soon</dd>
+          </dl>
+          <p style="margin-top:14px;font-size:15px">For licensed real-estate professionals. Access by request, Texas first.</p>
+        </div>
+        <div class="block">
+          <h4>What it will not do</h4>
+          <ul class="plain">
+            <li>Derive adjustments</li>
+            <li>Infer condition ratings</li>
+            <li>Reproduce USPAP rule text</li>
+            <li>Call a BPO a lender's evaluation</li>
+          </ul>
+        </div>
+        <div class="links">
+          <a href="https://valubrief.ai">valubrief.ai &rarr;</a>
+          <a href="mailto:hello@valubrief.ai">hello@valubrief.ai</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<section id="studios" class="dark" aria-labelledby="st-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Cloudmann Studios</p>
+      <h2 id="st-h">Games, music and custom video shorts</h2>
+      <p>The creative side of Cloudmann Companies. Games are made under Cloudmann Labs, the Studios games line.</p>
+    </div>
+    <div class="studio">
+      <div class="game">
+        <span class="k">Cloudmann Labs &middot; Games</span>
+        <h3>Scooter Blitz</h3>
+        <p>A native iOS game.</p>
+        <ul class="facts" aria-label="Scooter Blitz at a glance">
+          <li>iOS</li>
+          <li>Metal renderer</li>
+          <li>City-based tracks</li>
+          <li>Time of day &amp; weather</li>
+        </ul>
+        <p><span class="confirm">[CONFIRM: status &mdash; in development / TestFlight / App Store]</span></p>
+        <p class="more"><a href="/scooter-blitz/privacy/">Scooter Blitz privacy policy</a></p>
+      </div>
+      <div>
+        <span class="k">Music</span>
+        <h3>Original music</h3>
+        <p><span class="confirm">[CONFIRM: released or finished music to list; if none, show &ldquo;In development&rdquo; or remove this panel]</span></p>
+      </div>
+      <div>
+        <span class="k">Video</span>
+        <h3>Custom video shorts</h3>
+        <p>Short-form video made to order.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap inner">
+    <div>
+      <p class="eyebrow" style="color:var(--aqua)">Start a project</p>
+      <h2 id="contact-h">Tell us what's eating your week.</h2>
+      <p>If it's repetitive, documented, and somebody on your team dreads it, there's usually something to build. Send a couple of sentences and we'll tell you straight whether it's worth doing.</p>
+      <a class="mail" href="mailto:anthony@cloudmannconsulting.com?subject=Project%20inquiry">anthony@cloudmannconsulting.com</a>
+    </div>
+    <ul class="caps" aria-label="Cloudmann Consulting services">
+      <li>&#47;&#47; AI consulting &amp; custom builds</li>
+      <li>&#47;&#47; AI consulting for small businesses</li>
+      <li>&#47;&#47; MCP server development</li>
+      <li>&#47;&#47; Websites &amp; web apps</li>
+      <li>&#47;&#47; iOS application development</li>
+      <li>&#47;&#47; AI video &amp; music production</li>
+      <li>&#47;&#47; Passive website security checks</li>
+      <li>&#47;&#47; External attack surface assessments</li>
+      <li>&#47;&#47; Trading bots &amp; market tools</li>
+    </ul>
+  </div>
+</section>
+</main>
+
 <footer>
   <div class="wrap">
-    <p>&copy; 2026 Cloudmann Consulting</p>
-    <p><a href="mailto:anthony@cloudmannconsulting.com">anthony@cloudmannconsulting.com</a> &nbsp;&middot;&nbsp; <a href="https://valubrief.ai">ValuBrief.ai</a></p>
+    <p>&copy; 2026 Cloudmann Consulting<span class="sep">&middot;</span>Part of Cloudmann Companies</p>
+    <p>
+      <a href="mailto:anthony@cloudmannconsulting.com">anthony@cloudmannconsulting.com</a><span class="sep">&middot;</span>
+      <a href="https://valubrief.ai">ValuBrief.ai</a><span class="sep">&middot;</span>
+      <a href="/scooter-blitz/privacy/">Scooter Blitz privacy</a>
+    </p>
   </div>
 </footer>
 
@@ -378,7 +572,7 @@ footer a:hover{color:#C3CEDE}
 (function(){
   var c=document.getElementById('sky'); if(!c) return;
   if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){ c.style.display='none'; return; }
-  var ctx=c.getContext('2d'), w=0,h=0, dpr=Math.min(window.devicePixelRatio||1,2), t=0;
+  var ctx=c.getContext('2d'), w=0,h=0, dpr=Math.min(window.devicePixelRatio||1,2), t=0, raf=0, visible=true;
   var blobs=[
     {x:.16,y:.28,r:.46,c:'99,211,192',a:.20,sx:.00019,sy:.00012},
     {x:.74,y:.20,r:.40,c:'233,163,60',a:.14,sx:-.00015,sy:.00017},
@@ -390,7 +584,7 @@ footer a:hover{color:#C3CEDE}
     c.width=Math.floor(w*dpr); c.height=Math.floor(h*dpr);
     ctx.setTransform(dpr,0,0,dpr,0,0);
   }
-  function frame(){
+  function draw(){
     ctx.clearRect(0,0,w,h);
     for(var i=0;i<blobs.length;i++){
       var b=blobs[i];
@@ -402,10 +596,17 @@ footer a:hover{color:#C3CEDE}
       g.addColorStop(1,'rgba('+b.c+',0)');
       ctx.fillStyle=g; ctx.fillRect(0,0,w,h);
     }
-    t+=1; requestAnimationFrame(frame);
   }
-  window.addEventListener('resize',size);
-  size(); frame();
+  function frame(){ draw(); t+=1; raf=requestAnimationFrame(frame); }
+  function start(){ if(!raf && visible && !document.hidden) raf=requestAnimationFrame(frame); }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf=0; } }
+  /* Pause the animation when the hero is off-screen or the tab is hidden. */
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(e){ visible=e[0].isIntersecting; visible?start():stop(); }).observe(c);
+  }
+  document.addEventListener('visibilitychange',function(){ document.hidden?stop():start(); });
+  window.addEventListener('resize',function(){ size(); draw(); });
+  size(); draw(); start();
 })();
 </script>
 

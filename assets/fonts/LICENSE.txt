@@ -1,0 +1,5 @@
+Self-hosted web fonts (latin subsets, woff2) from the Fontsource project (npm @fontsource/*, v5.3.0):
+- Public Sans
+- Bricolage Grotesque
+- JetBrains Mono
+All three are licensed under the SIL Open Font License, Version 1.1 (https://openfontlicense.org).
